@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shadrack Sidavali - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  
+  <header>
+    <h1>SHADRACK SIDAVALI</h1>
+    <nav>
+      <ul>
+        <li><button class="nav-btn" data-target="home">Home</button></li>
+        <li><button class="nav-btn" data-target="about">About</button></li>/* Projects Section Container */
+#projects {
+  padding: 2rem 1rem;
+  background-color: #f9f9f9;
+}
+
+/* Section Heading */
+#projects h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #222;
+}
+
+/* Project Card Container */
+.project-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgb(0 0 0 / 0.15);
+}
+
+/* Project Title */
+.project-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.75rem;
+  color: #333;
+}
+
+/* Project Description */
+.project-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+/* Project links container */
+.project-card a {
+  text-decoration: none;
+  color: #007acc;
+  font-weight: 600;
+  margin-right: 1rem;
+  transition: color 0.3s ease;
+}
+
+.project-card a:hover {
+  color: #005fa3;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 650px) {
+  .project-card {
+    padding: 1rem;
+    max-width: 90%;
+  }
+
+  #projects h2 {
+    font-size: 2rem;
+  }
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #c7d4eb;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 10px;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  color: rgba(243, 244, 248, 0.425);
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+}
+
+.nav-btn:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+.content-section {
+  max-width: 800px;
+  margin: 2rem auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.hidden {
+  display: none;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.project-card {
+  background-color: hsl(0, 0%, 100%);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #555;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+  margin-top: 2rem;
+}.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.skill {
+  background-color: #333;
+  color: white;
+  padding: 0.8rem;
+  text-align: center;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: transform 0.2s;
+}
+
+.skill:hover {
+  transform: scale(1.05);
+}
+.skill-level {
+  margin-top: 10px;
+}
+
+.skill-level label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.progress-bar {
+  background-color: #ddd;
+  border-radius: 10px;
+  height: 15px;
+  width: 100%;
+}
+
+.progress {
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* Example skill widths */
+.progress.js { width: 80%; background-color: #f0db4f; }
+.progress.css { width: 90%; background-color: #2965f1; }
+.progress.html { width: 95%; background-color: #e34c26; }
+
+/* Contact Section Container */
+#contact {
+  max-width: 500px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgb(0 0 0 / 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Section Heading */
+#contact h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+  letter-spacing: 1.2px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Contact description */
+#contact p {
+  text-align: center;
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 2rem;
+  line-height: 1.4;
+}
+
+/* Phone number styling */
+#contact a {
+  display: block;
+  text-align: center;
+  color: #0077cc;
+  font-weight: 600;
+  text-decoration: none;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* Form styles */
+#contact form {
+  display: grid;
+  gap: 1.2rem;
+}
+
+/* Inputs and textarea */
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1.8px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #444;
+  transition: border-color 0.3s ease;
+  font-family: inherit;
+  resize: vertical;
+}
+
+#contact input[type="text"]:focus,
+#contact input[type="email"]:focus,
+#contact textarea:focus {
+  outline: none;
+  border-color: #0077cc;
+  box-shadow: 0 0 8px rgba(0, 119, 204, 0.3);
+}
+
+/* Textarea height */
+#contact textarea {
+  min-height: 110px;
+}
+
+/* Submit button */
+#contact button[type="submit"] {
+  background-color: #0077cc;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 0.9rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+#contact button[type="submit"]:hover {
+  background-color: #005fa3;
+}
+
+/* Responsive tweak */
+@media (max-width: 400px) {
+  #contact {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+}
+/* Contact Section Container */
+#contact {
+  max-width: 500px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgb(0 0 0 / 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Section Heading */
+#contact h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+  letter-spacing: 1.2px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Contact description */
+#contact p {
+  text-align: center;
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 2rem;
+  line-height: 1.4;
+}
+
+/* Phone number styling */
+#contact a {
+  display: block;
+  text-align: center;
+  color: #0077cc;
+  font-weight: 600;
+  text-decoration: none;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* Form styles */
+#contact form {
+  display: grid;
+  gap: 1.2rem;
+}
+
+/* Inputs and textarea */
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1.8px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #444;
+  transition: border-color 0.3s ease;
+  font-family: inherit;
+  resize: vertical;
+}
+
+#contact input[type="text"]:focus,
+#contact input[type="email"]:focus,
+#contact textarea:focus {
+  outline: none;
+  border-color: #0077cc;
+  box-shadow: 0 0 8px rgba(0, 119, 204, 0.3);
+}
+
+/* Textarea height */
+#contact textarea {
+  min-height: 110px;
+}
+
+/* Submit button */
+#contact button[type="submit"] {
+  background-color: #0077cc;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 0.9rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+#contact button[type="submit"]:hover {
+  background-color: #005fa3;
+}
+
+/* Responsive tweak */
+@media (max-width: 400px) {
+  #contact {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+}
+
+        <li><button class="nav-btn" data-target="skills">Skills</button></li>
+        <li><button class="nav-btn" data-target="projects">Projects</button></li>
+        <li><button class="nav-btn" data-target="contact">Contact</button></li>
+      </ul>
+    </nav>
+  </header>
+
+ 
+  <section id="home" class="content-section">
+    <h1>Hi, I'm Shadrack Sidavali</h1>
+<p>I'm a passionate web developer specializing in building sleek and responsive websites.</p>
+
+    <h2>Welcome to My Portfolio</h2>
+    <p>Explore my work and get to know more about me.</p>
+  </section>
+
+  
+  <section id="about" class="content-section hidden">
+    <h2>About Me</h2>
+    <img src="shady.jpg" alt="Photo of Shadrack" class="profile-photo" />
+    <p>I'm a developer with a passion for building sleek and responsive websites.</p>
+  </section>
+  <section id="skills" class="content-section hidden">
+  <h2>My Skills</h2>
+  
+  <div class="skills-grid">
+    <div class="skill">HTML5</div>
+    <div class="skill">CSS3</div>
+    <div class="skill">JavaScript</div>
+    <div class="skill">Responsive Design</div>
+    <div class="skill">Git & GitHub</div>
+    <div class="skill">VS Code</div>
+    <div class="skill">Flexbox & Grid</div>
+    <div class="skill">API Integration</div>
+    <div class="skill">Basic SEO</div>
+  </div>
+  <p class="skills-summary">
+  I continuously improve my skills through hands-on projects and learning the latest web technologies.
+</p>
+
+  <div class="skill-level">
+  <label>JavaScript</label>
+  <div class="progress-bar">
+    <div class="progress js"></div>
+  </div>
+</div>
+
+<div class="skill-level">
+  <label>CSS3</label>
+  <div class="progress-bar">
+    <div class="progress css"></div>
+  </div>
+</div>
+
+<div class="skill-level">
+  <label>HTML5</label>
+  <div class="progress-bar">
+    <div class="progress html"></div>
+  </div>
+</div>
+
+</section>
+
+
+  
+  <section id="projects" class="content-section hidden">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>Responsive Portfolio Website</h3>
+      <p>I designed and developed a modern, responsive portfolio website to showcase my skills, projects, and professional background. It adapts seamlessly across all devices.</p>
+      <a href="#">View Project</a>
+      
+    </div>
+    <div class="project-card">
+  <h3>Weather App</h3>
+  <img src="weather-app.png" alt="Screenshot of Weather App">
+  <p>A simple weather forecasting web app using HTML, CSS, and JavaScript. It fetches live weather data from an API and displays it by location.</p>
+  <a href="https://yourliveprojectlink.com" target="_blank">Live Demo</a> |
+  <a href="https://github.com/yourusername/weather-app" target="_blank">Source Code</a>
+</div>
+
+  </section>
+
+ 
+  <section id="contact" class="content-section hidden">
+    <h2>Contact Me</h2>
+    <p>You can reach me at:</p>
+    <a href="tel:0748036811">0748036811</a>
+
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  
+  <footer>
+    <p>&copy; 2025 Shadrack Sidavali</p>
+  </footer>
+
+  
+  <script>
+    const buttons = document.querySelectorAll('.nav-btn');
+    const sections = document.querySelectorAll('.content-section');
+
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        const target = button.dataset.target;
+
+        sections.forEach(section => {
+          if (section.id === target || section.id === 'home') {
+            section.classList.remove('hidden');
+          } else {
+            section.classList.add('hidden');
+          }
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
