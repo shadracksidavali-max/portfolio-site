@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shadrack Sidavali - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>SHADRACK SIDAVALI</h1>
+    <nav>
+      <ul>
+        <li><button class="nav-btn" data-target="home">Home</button></li>
+        <li><button class="nav-btn" data-target="about">About</button></li>
+        <li><button class="nav-btn" data-target="skills">Skills</button></li>
+        <li><button class="nav-btn" data-target="projects">Projects</button></li>
+        <li><button class="nav-btn" data-target="contact">Contact</button></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="home" class="content-section">
+    <h1>Hi, I'm Shadrack Sidavali</h1>
+    <p>I'm a passionate web developer specializing in building sleek and responsive websites.</p>
+    <h2>Welcome to My Portfolio</h2>
+    <p>Explore my work and get to know more about me.</p>
+  </section>
+  <section id="about" class="content-section hidden">
+    <h2>About Me</h2>
+    <img src="shady.jpg" alt="Photo of Shadrack" class="profile-photo" />
+    <p>I'm a developer with a passion for building sleek and responsive websites.</p>
+  </section>
+  <section id="skills" class="content-section hidden">
+    <h2>My Skills</h2>
+    <div class="skills-grid">
+      <div class="skill">HTML5</div>
+      <div class="skill">CSS3</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">Responsive Design</div>
+      <div class="skill">Git & GitHub</div>
+      <div class="skill">VS Code</div>
+      <div class="skill">Flexbox & Grid</div>
+      <div class="skill">API Integration</div>
+      <div class="skill">Basic SEO</div>
+    </div>
+    <p class="skills-summary">
+      I continuously improve my skills through hands-on projects and learning the latest web technologies.
+    </p>
+    <div class="skill-level">
+      <label>JavaScript</label>
+      <div class="progress-bar">
+        <div class="progress js"></div>
+      </div>
+    </div>
+    <div class="skill-level">
+      <label>CSS3</label>
+      <div class="progress-bar">
+        <div class="progress css"></div>
+      </div>
+    </div>
+    <div class="skill-level">
+      <label>HTML5</label>
+      <div class="progress-bar">
+        <div class="progress html"></div>
+      </div>
+    </div>
+  </section>
+  <section id="projects" class="content-section hidden">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>Responsive Portfolio Website</h3>
+      <p>I designed and developed a modern, responsive portfolio website to showcase my skills, projects, and professional background. It adapts seamlessly across all devices.</p>
+      <a href="#">View Project</a>
+    </div>
+    <div class="project-card">
+      <h3>Weather App</h3>
+      <img src="weather-app.png" alt="Screenshot of Weather App">
+      <p>A simple weather forecasting web app using HTML, CSS, and JavaScript. It fetches live weather data from an API and displays it by location.</p>
+      <a href="https://yourliveprojectlink.com" target="_blank">Live Demo</a> |
+      <a href="https://github.com/yourusername/weather-app" target="_blank">Source Code</a>
+    </div>
+  </section>
+  <section id="contact" class="content-section hidden">
+    <h2>Contact Me</h2>
+    <p>You can reach me at:</p>
+    <a href="tel:0748036811">0748036811</a>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+  <footer>
+    <p>&copy; 2025 Shadrack Sidavali</p>
+  </footer>
+  <script>
+    const buttons = document.querySelectorAll('.nav-btn');
+    const sections = document.querySelectorAll('.content-section');
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        const target = button.dataset.target;
+        sections.forEach(section => {
+          if (section.id === target || section.id === 'home') {
+            section.classList.remove('hidden');
+          } else {
+            section.classList.add('hidden');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
